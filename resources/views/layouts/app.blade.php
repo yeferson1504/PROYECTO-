@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo','Minimercado2024')</title>
+    @vite('resources/css/app.css')
 </head>
 <body>
       <header>
             {{-- Navbar--}}
-            @include('Layoust.Navbar')
+            @include('layouts.Navbar')
       </header>    
       <main>
 @yiel('contenido')
       </main>
       <footer>
-@incluide('Layoust.footer')
+@incluide('layouts.footer')
 </footer>
 </body>
 </html>
